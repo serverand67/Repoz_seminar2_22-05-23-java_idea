@@ -2,6 +2,7 @@ package seminar2;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -28,7 +29,7 @@ public class Task22 {
 
         // 2 вариант, не всегда можно использовать, только с теми классами которые
         // екстендятся (имеют расширение/имеют тип) Closeable, AutoCloseable
-        try(FileWriter in = new FileWriter("test.txt");) {
+        try(FileWriter in = new FileWriter("test.txt", StandardCharsets.UTF_8);) {
             in.write(str);
             System.out.println("Записано");
             logger.log(Level.INFO,"Записано");

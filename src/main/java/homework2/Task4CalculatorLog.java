@@ -2,6 +2,7 @@ package homework2;
 
 //4) К калькулятору из предыдущего ДЗ добавить логирование.
 
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,7 +21,7 @@ public class Task4CalculatorLog {
             if (operator == '+'){
                 result = num1 + num2;
 //                System.out.println(num1 + " + " + num2 + " = " + result);
-                logger.log(Level.INFO, "Результат  равен " + result);
+                logger.log(Level.INFO, "Результат  равен " + result, StandardCharsets.UTF_8);
             }
             if (operator == '-'){
                 result = num1 - num2;

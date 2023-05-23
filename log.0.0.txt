@@ -4,3 +4,5 @@ INFO: Длина повторяемой строки = 400
 INFO: Записано
 ��� 23, 2023 1:15:56 PM homework2.Task4CalculatorLog main
 INFO: Результат  равен 7
+��� 23, 2023 4:48:00 PM homework2.Task4CalculatorLog main
+INFO: Результат  равен 10
