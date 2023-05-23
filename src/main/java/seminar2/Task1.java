@@ -21,7 +21,10 @@ package seminar2;
                     build.append("c2");
                 }
             }
-            System.out.println(build);
+//            System.out.println(build);
+            // вместо систем аут используем логер выше - @Log4j
+//            log.
+            // дописать как вызывать и использовать новый логер, будет на следующем семинаре
         }
 
     }
