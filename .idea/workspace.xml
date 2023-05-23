@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d7bcb10-19d8-40c8-ae98-4a7ae938bc4d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="6d7bcb10-19d8-40c8-ae98-4a7ae938bc4d" name="Changes" comment="обновление">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework1/Task1Thiangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework1/Task2Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework1/Task3PrimeNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework1/Task4Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework2/Log1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homework2/Task4CalculatorLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seminar2/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seminar2/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/seminar2/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/seminar2/Task1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +58,14 @@
       <option name="presentableId" value="Default" />
       <updated>1684823927061</updated>
     </task>
+    <task id="LOCAL-00001" summary="обновление">
+      <created>1684835572757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684835572757</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -67,6 +78,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="обновление" />
+    <option name="LAST_COMMIT_MESSAGE" value="обновление" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
