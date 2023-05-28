@@ -1,66 +1,41 @@
 package homework2;
-
-import org.json.simple.JSONObject;
-
 //  1) Дана строка sql-запроса "select * from students where ".
 //  Сформируйте часть WHERE этого запроса, используя StringBuilder.
 //  Данные для фильтрации приведены ниже в виде json-строки.
 //  Если значение null, то параметр не должен попадать в запрос.
 //  Параметры для фильтрации: {"name":"Ivanov", "country":"Russia", "city":"Moscow", "age":"null"}
+
+        // 1 вариант
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.json.JSONException;
+import java.util.Map;
+
 public class Task1SQL {
-//    private String jsonData = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
-////    private String jsonData = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
-//    public static void main(String jsonData) {
-//
-//        // Парсим строку
-//        JSONObject parse = new JSONObject(jsonData);
-//
-//        // Формируем часть WHERE запроса из данной строки
-//        StringBuilder whereClause = new StringBuilder();
-//        for (String key : parse.keySet()) {
-//            String value = parse.getString(key);
-//
-//            // Если значение null, то не попадает
-//            if (!value.equals("null")) {
-//                // Если есть параметры в запросе, то добавляем "AND"
-//                if (whereClause.length() > 0) {
-//                    whereClause.append(" AND ");
-//                }
-//                // Добавляем параметр в запрос
-//                whereClause.append(key);
-//                whereClause.append("=");
-//                whereClause.append("'").append(value).append("'");
-//            }
-//        }
-//
-//        // Добавляем к запросу WHERE и часть запроса с параметрами
-//        String sqlQuery = "SELECT * FROM students WHERE " + whereClause.toString();
-//
-////    }
-////    String sql = "select * from students where ";
-////    String jsonData = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
-////
-////    JSONObject filters = new JSONObject(jsonData);
-////
-////    StringBuilder whereClause = new StringBuilder();
-////
-////    for (String key : filters.keySet()) {
-////        String value = filters.getString(key);
-////
-////        if (!value.equals("null")) {
-////            if (whereClause.length() > 0) {
-////                whereClause.append(" AND ");
-////            }
-////
-////            whereClause.append(key);
-////            whereClause.append("=");
-////            whereClause.append("'").append(value).append("'");
-////                    }
-////                }
-////
-////            String sqlQuery = sql + whereClause.toString();
-////
-////        System.out.println(sqlQuery);
-//
-  }
+     static String jsonString = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"}";
+
+    public static void main(String[] args) throws JSONException {
+
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        Map<String, Object> map = null;
+        try {
+            map = objectMapper.readValue(jsonString, new TypeReference<Map<String, Object>>() {
+            });
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+        //почему не работает .readValue - подчеркиает красным ???
+
+        String name = (String) map.get("name");
+        String city = (String) map.get("city");
+        String country = (String) map.get("country");
+
+        String sqlQuery = "SELECT * FROM students WHERE " + "name = " + name
+                + " AND " + "country = " + country + " AND " + "city = " + city + ";";
+        System.out.println(sqlQuery);
+
+    }
+}
 

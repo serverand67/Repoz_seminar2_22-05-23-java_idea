@@ -6,3 +6,9 @@ INFO: Записано
 INFO: Результат  равен 7
 ��� 23, 2023 4:48:00 PM homework2.Task4CalculatorLog main
 INFO: Результат  равен 10
+��� 24, 2023 9:06:43 AM homework2.Task4CalculatorLog main
+INFO: Результат  равен 10
+��� 24, 2023 9:12:59 AM homework2.Task4CalculatorLog main
+INFO: Результат  равен 8
+��� 24, 2023 1:32:08 PM homework2.Task4CalculatorLog main
+INFO: Результат  равен 5
